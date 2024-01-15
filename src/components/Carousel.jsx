@@ -16,6 +16,7 @@ function Carousel() {
         setcurrIndex(currindex < images.length - 1? currindex + 1 : 0)
     }
     return(
+        <>
         <div className="Carousal-container flex">
             <div className="leftArrow arrowDiv flex" onClick={handlePrev}>
                 <ArrowBackIosIcon/>
@@ -27,6 +28,7 @@ function Carousel() {
             <h4 className="caption">{images[currindex].subtitle}</h4>
             <img src={images[currindex].img} alt="" />
         </div>
+        </>
     )
 }
 
